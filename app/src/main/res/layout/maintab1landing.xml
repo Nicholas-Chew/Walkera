@@ -1,0 +1,252 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ntu.powerranger.walkera.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:id="@+id/firstLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/MyInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="My Step Done"
+                    android:textSize="24dp" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/InfoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:adjustViewBounds="true"
+                android:background="#00000000"
+                android:scaleType="fitEnd"
+                app:srcCompat="@mipmap/circled_information_source" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <TextView
+                android:id="@+id/count"
+                android:layout_width="120dp"
+                android:layout_height="55dp"
+                android:paddingTop="5dp"
+                />
+
+            <ImageView
+                android:id="@+id/finish"
+                android:layout_width="94dp"
+                android:layout_height="55dp"
+                app:srcCompat="@mipmap/finish" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2">
+
+        <LinearLayout
+            android:id="@+id/firstLayerVer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/esplande"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/esplande" />
+
+            <ImageView
+                android:id="@+id/mbs"
+                android:layout_width="95dp"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/mbs" />
+
+            <ImageView
+                android:id="@+id/ferrisWheel"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/ferriswheel" />
+
+            <ImageView
+                android:id="@+id/bird"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/bird" />
+
+            <ImageView
+                android:id="@+id/tree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/tree" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secondLayerVer"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/footpathleft"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/line_03" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/thirdLayerVer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/footstep"
+                android:layout_width="52dp"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/footsteps" />
+
+            <ImageView
+                android:id="@+id/footstep2"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/footsteps" />
+
+            <ImageView
+                android:id="@+id/footstep3"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/footsteps" />
+
+            <ImageView
+                android:id="@+id/footstep4"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/footsteps" />
+
+            <ImageView
+                android:id="@+id/footstep5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/footsteps" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fourthLayerVer"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/footpathright"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                app:srcCompat="@mipmap/line_03" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/fifthLayerVer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/merlion"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/merlion" />
+
+            <ImageView
+                android:id="@+id/hotel"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/hotel" />
+
+            <ImageView
+                android:id="@+id/gardensbythebay"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/gardensbythebay" />
+
+            <ImageView
+                android:id="@+id/hdb"
+                android:layout_width="match_parent"
+                android:layout_height="81dp"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/hdb" />
+
+            <ImageView
+                android:id="@+id/flower"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                app:srcCompat="@mipmap/flower" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
