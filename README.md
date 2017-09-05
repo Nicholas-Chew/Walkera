@@ -17,3 +17,7 @@ Assigment required documentations
 
 ### Mobile Application
 Walkera's frontend that is a Android application
+
+****
+
+***Disclaimer:*** This repo is no longer maintained and was submitted as part of the coursework assignment for CE 2006
